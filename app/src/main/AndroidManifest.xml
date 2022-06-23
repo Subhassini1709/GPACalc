@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GPACalc">
         <activity
+            android:name=".Sem8_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sem7_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sem6_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sem5_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sem4_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sem3_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sem1_activity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
