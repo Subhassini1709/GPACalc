@@ -3,11 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Users/USER/StudioProjects/GPACalc/app/src/main/res/layout/activity_cgpa.xml" value="0.15305686190679776" />
         <entry key="..\:/Users/USER/StudioProjects/GPACalc/app/src/main/res/layout/activity_gpa.xml" value="0.22" />
         <entry key="..\:/Users/USER/StudioProjects/GPACalc/app/src/main/res/layout/activity_main.xml" value="0.16" />
         <entry key="..\:/Users/USER/StudioProjects/GPACalc/app/src/main/res/layout/activity_percentage.xml" value="0.22" />
         <entry key="..\:/Users/USER/StudioProjects/GPACalc/app/src/main/res/layout/activity_sgpa.xml" value="0.16246259085079093" />
+=======
+        <entry key="..\:/Users/Subhassini Sridharan/StudioProjects/GPACalc/app/src/main/res/layout/activity_sem1.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/Subhassini Sridharan/StudioProjects/GPACalc/app/src/main/res/layout/activity_sem2.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/Subhassini Sridharan/StudioProjects/GPACalc/app/src/main/res/layout/activity_sem3.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/Subhassini Sridharan/StudioProjects/GPACalc/app/src/main/res/layout/activity_sem4.xml" value="0.15304054054054053" />
+        <entry key="..\:/Users/Subhassini Sridharan/StudioProjects/GPACalc/app/src/main/res/layout/activity_sem5.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/Subhassini Sridharan/StudioProjects/GPACalc/app/src/main/res/layout/activity_sem6.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/Subhassini Sridharan/StudioProjects/GPACalc/app/src/main/res/layout/activity_sem7.xml" value="0.16993243243243245" />
+        <entry key="..\:/Users/Subhassini Sridharan/StudioProjects/GPACalc/app/src/main/res/layout/activity_sem8.xml" value="0.15067567567567566" />
+>>>>>>> 1ad0c50ff22a3da8bd90e47b6d64d011ba9ccb1a
       </map>
     </option>
   </component>
