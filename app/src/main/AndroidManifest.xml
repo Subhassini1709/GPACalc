@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GPACalc">
         <activity
+            android:name=".Percentage_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".GPA_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CGPA_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SGPA_Activity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
