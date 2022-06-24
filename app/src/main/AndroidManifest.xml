@@ -40,6 +40,9 @@
             android:name=".Sem3_activity"
             android:exported="false" />
         <activity
+            android:name=".Sem2_Activity"
+            android:exported="false" />
+        <activity
             android:name=".Sem1_activity"
             android:exported="false" />
         <activity
