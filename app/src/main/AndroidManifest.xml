@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GPACalc">
         <activity
+            android:name=".SGPA_Result_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Percentage_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".GPA_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CGPA_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SGPA_Activity"
+            android:exported="false" />
+        <activity
             android:name=".Sem8_Activity"
             android:exported="false" />
         <activity
@@ -26,6 +41,9 @@
             android:exported="false" />
         <activity
             android:name=".Sem3_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sem2_Activity"
             android:exported="false" />
         <activity
             android:name=".Sem1_activity"

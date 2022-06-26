@@ -7,10 +7,25 @@
     tools:context=".Sem6_Activity">
 
     <TextView
+        android:id="@+id/textView7"
+        android:layout_width="234dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/enter_0_for_fail"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headingSem6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
         android:id="@+id/headingSem6"
         android:layout_width="289dp"
         android:layout_height="56dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="16dp"
         android:background="#000000"
         android:backgroundTint="#000000"
         android:text="@string/sem_6"
@@ -43,7 +58,7 @@
         android:id="@+id/sem6_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="@string/_18_62"
         android:importantForAutofill="no"
@@ -59,7 +74,7 @@
         android:id="@+id/sem6_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="@string/_18_63"
         android:importantForAutofill="no"
@@ -75,7 +90,7 @@
         android:id="@+id/sem6_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="@string/_18_64_"
         android:importantForAutofill="no"
@@ -92,7 +107,7 @@
         android:id="@+id/sem6_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="@string/_18_65_"
         android:importantForAutofill="no"
@@ -108,7 +123,7 @@
         android:id="@+id/sem6_6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="@string/_18_l66"
         android:importantForAutofill="no"
@@ -124,7 +139,7 @@
         android:id="@+id/sem6_8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="100dp"
         android:ems="10"
         android:hint="@string/_18_mp68"
@@ -136,27 +151,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sem6_7"
-        app:layout_constraintVertical_bias="0.035"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="TextContrastCheck" />
-
-    <Button
-        android:id="@+id/calc_sem6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:backgroundTint="#DC143C"
-        android:text="@string/calculate"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sem6_8"
-        app:layout_constraintVertical_bias="0.415" />
 
     <Button
         android:id="@+id/reset_sem6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="68dp"
+        android:layout_marginEnd="40dp"
         android:backgroundTint="#DC143C"
         android:text="@string/reset"
         android:textSize="20sp"
@@ -165,13 +167,26 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/calc_sem6"
         app:layout_constraintTop_toBottomOf="@+id/sem6_8"
-        app:layout_constraintVertical_bias="0.413" />
+        app:layout_constraintVertical_bias="0.164" />
+
+    <Button
+        android:id="@+id/calc_sem6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:backgroundTint="#DC143C"
+        android:text="@string/calculate"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sem6_8"
+        app:layout_constraintVertical_bias="0.164" />
 
     <EditText
         android:id="@+id/sem6_7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="@string/_18_l67"
         android:importantForAutofill="no"

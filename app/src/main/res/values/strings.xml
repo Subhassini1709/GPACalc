@@ -1,6 +1,28 @@
 <resources>
     <string name="app_name">GPACalc</string>
+    <string name="gpa_to_convertor">GPA to % Convertor</string>
+    <string name="to_gpa_convertor">% to GPA Convertor</string>
+    <string name="sgpa_calculator">SGPA Calculator</string>
+    <string name="gpacalc">GPACalc</string>
+    <string name="sgpa_calculator_2018_scheme">SGPA Calculator (2018 Scheme)</string>
     <string name="sem_1">Sem 1</string>
+    <string name="sem_3">Sem 3</string>
+    <string name="sem_8">Sem 8</string>
+    <string name="sem_6">Sem 6</string>
+    <string name="sem_5">Sem 5</string>
+    <string name="sem_7">Sem 7</string>
+    <string name="sem_4">Sem 4</string>
+    <string name="sem_2">Sem 2</string>
+    <string name="cgpa_calculator">CGPA Calculator</string>
+    <string name="enter_0_for_semesters_not_completed">Enter 0 for semesters not completed</string>
+    <string name="reset">Reset</string>
+    <string name="calculate">Calculate</string>
+    <string name="percentage_to_gpa_convertor">Percentage to GPA Convertor</string>
+    <string name="enter_your_percentage">Enter your percentage</string>
+    <string name="enter_your_gpa">Enter your GPA</string>
+    <string name="gpa">GPA</string>
+    <string name="percentage">Percentage</string>
+    <string name="gpa_to_percentage_convertor">GPA to Percentage Convertor</string>
     <string name="_18_11">18**11</string>
     <string name="_18_12">18**12</string>
     <string name="_18_13">18**13</string>
@@ -8,8 +30,6 @@
     <string name="_18_15">18**15</string>
     <string name="_18_16">18**16</string>
     <string name="_18_18">18**18</string>
-    <string name="calculate">Calculate</string>
-    <string name="reset">Reset</string>
     <string name="_18_17">18**17</string>
     <!--<string name="sem_1">Sem 1</string>
     <string name="_18_11">18**11</string>
@@ -31,7 +51,6 @@
     <string name="_18_26">18**26</string>
     <string name="_18_27">18**27</string>
     <string name="_18_28">18**28</string>-->
-    <string name="sem_3">Sem 3</string>
     <string name="_18_34">18**34</string>
     <string name="_18_33">18**33</string>
     <string name="_18_32">18**32</string>
@@ -49,8 +68,7 @@
     <string name="_18_46">18**46</string>
     <string name="_18_l47">18**L47</string>
     <string name="_18_l48">18**L48</string>
-    <string name="sem_4">Sem 4</string>
-    <string name="sem_5">Sem 5</string>
+    <string name="_18_49">18***49</string>
     <string name="_18_52">18**52</string>
     <string name="_18_51">18**51</string>
     <string name="_18_53">18**53</string>
@@ -61,7 +79,6 @@
     <string name="_18_l58">18**L58</string>
     <string name="_18civ59">18CIV59</string>
     <string name="_18_61">18**61</string>
-    <string name="sem_6">Sem 6</string>
     <string name="_18_62">18**62</string>
     <string name="_18_63">18**63</string>
     <string name="_18_64">18**64</string>
@@ -69,7 +86,6 @@
     <string name="_18_l66">18**L66</string>
     <string name="_18_l67">18**L67</string>
     <string name="_18_mp68">18**MP68</string>
-    <string name="sem_2">Sem 2</string>
     <string name="_18_21">18**21</string>
     <string name="_18_22">18**22</string>
     <string name="_18_23">18**23</string>
@@ -80,7 +96,6 @@
     <string name="_18_28">18**28</string>
     <string name="_18_64_">18**64*</string>
     <string name="_18_65_">18**65*</string>
-    <string name="sem_7">Sem 7</string>
     <string name="_18_71">18**71</string>
     <string name="_18_72">18**72</string>
     <string name="_18_73">18**73*</string>
@@ -88,10 +103,10 @@
     <string name="_18_75">18**75*</string>
     <string name="_18_l76">18**L76</string>
     <string name="_18_l77">18**L77</string>
-    <string name="sem_8">Sem 8</string>
     <string name="_18_81">18**81</string>
     <string name="_18_82">18**82*</string>
     <string name="_18_p83">18**P83</string>
     <string name="_18_s84">18**S84</string>
     <string name="_18_i85">18**I85</string>
+    <string name="enter_0_for_fail">Enter 0 for Fail</string>
 </resources>
