@@ -14,7 +14,7 @@ public class GPA_Activity extends AppCompatActivity {
     EditText percent;
     TextView gpa;
     Button calc,reset;
-    float p=0,g=0;
+    float p,g;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,12 +23,15 @@ public class GPA_Activity extends AppCompatActivity {
         percent = findViewById(R.id.percentage);
         calc = (Button) findViewById(R.id.calc_gpa);
         reset = (Button) findViewById(R.id.reset_gpa);
-
         calc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                p = Float.parseFloat(percent.getText().toString());
-                g = (float) ((p/10)+0.75);
+                p=0;
+                g=0;
+                if(!percent.getText().toString().equals(""))
+                    p = Float.parseFloat(percent.getText().toString());
+                    if(p>0)
+                        g = (float) ((p/10)+0.75);
                 gpa.setText(String.format(Locale.US,"%.2f",g));
             }
         });
@@ -38,8 +41,6 @@ public class GPA_Activity extends AppCompatActivity {
             public void onClick(View v) {
                 percent.setText("");
                 gpa.setText("");
-                p=0;
-                g=0;
             }
         });
     }

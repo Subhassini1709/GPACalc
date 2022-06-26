@@ -68,6 +68,7 @@
     <string name="_18_46">18**46</string>
     <string name="_18_l47">18**L47</string>
     <string name="_18_l48">18**L48</string>
+    <string name="_18_49">18***49</string>
     <string name="_18_52">18**52</string>
     <string name="_18_51">18**51</string>
     <string name="_18_53">18**53</string>
@@ -107,4 +108,5 @@
     <string name="_18_p83">18**P83</string>
     <string name="_18_s84">18**S84</string>
     <string name="_18_i85">18**I85</string>
+    <string name="enter_0_for_fail">Enter 0 for Fail</string>
 </resources>

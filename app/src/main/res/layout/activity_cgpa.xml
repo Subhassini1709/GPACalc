@@ -9,16 +9,19 @@
 
     <TextView
         android:id="@+id/cgpa_header"
-        android:layout_width="252dp"
-        android:layout_height="40dp"
+        android:layout_width="267dp"
+        android:layout_height="59dp"
+        android:background="@color/black"
+        android:text="@string/cgpa_calculator"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061" />
+        app:layout_constraintVertical_bias="0.042" />
 
     <EditText
         android:id="@+id/sem8"
@@ -166,27 +169,27 @@
         android:id="@+id/calc_cgpa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="40dp"
+        android:backgroundTint="#DC143C"
         android:text="@string/calculate"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sem8"
-        app:layout_constraintVertical_bias="0.265" />
+        app:layout_constraintVertical_bias="0.16000003" />
 
     <Button
         android:id="@+id/reset_cgpa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#DC143C"
         android:text="@string/reset"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.813"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/calc_cgpa"
         app:layout_constraintTop_toBottomOf="@+id/sem8"
-        app:layout_constraintVertical_bias="0.265" />
+        app:layout_constraintVertical_bias="0.16000003" />
 </androidx.constraintlayout.widget.ConstraintLayout>

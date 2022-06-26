@@ -28,8 +28,12 @@ public class Percentage_Activity extends AppCompatActivity {
         calc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                g = Float.parseFloat(gpa.getText().toString());
-                p = (float) ((g-0.75)*10);
+                p=0;
+                g=0;
+                if (!gpa.getText().toString().equals(""))
+                    g = Float.parseFloat(gpa.getText().toString());
+                    if(g>=0.75)
+                        p = (float) ((g-0.75)*10);
                 percent.setText(String.format(Locale.US,"%.2f",p) + "%");
             }
         });
@@ -39,8 +43,6 @@ public class Percentage_Activity extends AppCompatActivity {
             public void onClick(View v) {
                 gpa.setText("");
                 percent.setText("");
-                p=0;
-                g=0;
             }
         });
     }

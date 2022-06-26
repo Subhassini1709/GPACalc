@@ -7,10 +7,25 @@
     tools:context=".Sem8_Activity">
 
     <TextView
+        android:id="@+id/textView9"
+        android:layout_width="234dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/enter_0_for_fail"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headingSem8"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
         android:id="@+id/headingSem8"
         android:layout_width="289dp"
         android:layout_height="56dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="16dp"
         android:background="#000000"
         android:backgroundTint="#000000"
         android:text="@string/sem_8"
@@ -43,7 +58,7 @@
         android:id="@+id/sem8_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="@string/_18_82"
         android:importantForAutofill="no"
@@ -59,7 +74,7 @@
         android:id="@+id/sem8_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="@string/_18_p83"
         android:importantForAutofill="no"
@@ -75,7 +90,7 @@
         android:id="@+id/sem8_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="@string/_18_s84"
         android:importantForAutofill="no"
@@ -92,7 +107,7 @@
         android:id="@+id/sem8_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="@string/_18_i85"
         android:importantForAutofill="no"
@@ -105,22 +120,10 @@
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/calc_sem8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:backgroundTint="#DC143C"
-        android:text="@string/calculate"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sem8_5" />
-
-    <Button
         android:id="@+id/reset_sem8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="68dp"
+        android:layout_marginEnd="40dp"
         android:backgroundTint="#DC143C"
         android:text="@string/reset"
         android:textSize="20sp"
@@ -128,6 +131,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/calc_sem8"
-        app:layout_constraintTop_toBottomOf="@+id/sem8_5" />
+        app:layout_constraintTop_toBottomOf="@+id/sem8_5"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <Button
+        android:id="@+id/calc_sem8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:backgroundTint="#DC143C"
+        android:text="@string/calculate"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sem8_5"
+        app:layout_constraintVertical_bias="0.07999998" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

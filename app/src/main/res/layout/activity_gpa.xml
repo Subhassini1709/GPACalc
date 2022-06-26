@@ -8,23 +8,26 @@
 
     <TextView
         android:id="@+id/heading_GPA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="315dp"
+        android:layout_height="85dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="40dp"
+        android:background="@color/black"
         android:text="@string/percentage_to_gpa_convertor"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
 
     <TextView
         android:id="@+id/gpa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="36dp"
         android:ems="10"
         android:hint="@string/gpa"
         android:importantForAutofill="no"
@@ -43,7 +46,7 @@
         android:id="@+id/percentage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
+        android:layout_marginTop="108dp"
         android:ems="10"
         android:hint="@string/enter_your_percentage"
         android:importantForAutofill="no"
@@ -52,7 +55,7 @@
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/heading_GPA"
         tools:ignore="TextContrastCheck" />
@@ -62,28 +65,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
-        android:layout_marginBottom="192dp"
         android:backgroundTint="#DC143C"
         android:text="@string/reset"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/calc_gpa"
         app:layout_constraintTop_toBottomOf="@+id/gpa"
-        app:layout_constraintVertical_bias="0.502" />
+        app:layout_constraintVertical_bias="0.16000003" />
 
     <Button
         android:id="@+id/calc_gpa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="192dp"
+        android:layout_marginStart="40dp"
         android:backgroundTint="#DC143C"
         android:text="@string/calculate"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/reset_gpa"
-        app:layout_constraintHorizontal_bias="0.318"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gpa"
-        app:layout_constraintVertical_bias="0.502" />
+        app:layout_constraintVertical_bias="0.16000003" />
 </androidx.constraintlayout.widget.ConstraintLayout>

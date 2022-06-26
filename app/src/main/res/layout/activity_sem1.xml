@@ -11,7 +11,7 @@
         android:id="@+id/headingSem1"
         android:layout_width="289dp"
         android:layout_height="56dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="16dp"
         android:background="#000000"
         android:backgroundTint="#000000"
         android:text="@string/sem_1"
@@ -20,7 +20,6 @@
         android:textColorLink="#F4EFEF"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,31 +35,53 @@
         android:minHeight="48dp"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/headingSem1"
         tools:ignore="TextContrastCheck" />
 
     <EditText
-        android:id="@+id/sem1_2"
+        android:id="@+id/sem1_8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="100dp"
         android:ems="10"
-        android:hint="@string/_18_12"
+        android:hint="@string/_18_18"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sem1_7"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/sem1_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/_18_17"
         android:importantForAutofill="no"
         android:inputType="number"
         android:minHeight="48dp"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sem1_1"
+        app:layout_constraintTop_toBottomOf="@+id/sem1_6"
         tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/sem1_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="@string/_18_13"
         android:importantForAutofill="no"
@@ -68,6 +89,7 @@
         android:minHeight="48dp"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sem1_2"
         tools:ignore="TextContrastCheck" />
@@ -76,7 +98,7 @@
         android:id="@+id/sem1_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="@string/_18_14"
         android:importantForAutofill="no"
@@ -90,26 +112,10 @@
         tools:ignore="TextContrastCheck" />
 
     <EditText
-        android:id="@+id/sem1_5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="@string/_18_15"
-        android:importantForAutofill="no"
-        android:inputType="number"
-        android:minHeight="48dp"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sem1_4"
-        tools:ignore="TextContrastCheck" />
-
-    <EditText
         android:id="@+id/sem1_6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="@string/_18_16"
         android:importantForAutofill="no"
@@ -117,47 +123,63 @@
         android:minHeight="48dp"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sem1_5"
         tools:ignore="TextContrastCheck" />
 
     <EditText
-        android:id="@+id/sem1_8"
+        android:id="@+id/sem1_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
-        android:hint="@string/_18_18"
+        android:hint="@string/_18_15"
         android:importantForAutofill="no"
         android:inputType="number"
         android:minHeight="48dp"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sem1_7"
-        app:layout_constraintVertical_bias="0.035"
+        app:layout_constraintTop_toBottomOf="@+id/sem1_4"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/sem1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/_18_12"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sem1_1"
         tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/calc_sem1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="40dp"
         android:backgroundTint="#DC143C"
         android:text="@string/calculate"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sem1_8"
-        app:layout_constraintVertical_bias="0.415" />
+        app:layout_constraintVertical_bias="0.16" />
 
     <Button
         android:id="@+id/reset_sem1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="68dp"
+        android:layout_marginEnd="40dp"
         android:backgroundTint="#DC143C"
         android:text="@string/reset"
         android:textSize="20sp"
@@ -166,22 +188,21 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/calc_sem1"
         app:layout_constraintTop_toBottomOf="@+id/sem1_8"
-        app:layout_constraintVertical_bias="0.413" />
+        app:layout_constraintVertical_bias="0.16" />
 
-    <EditText
-        android:id="@+id/sem1_7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="@string/_18_17"
-        android:importantForAutofill="no"
-        android:inputType="number"
-        android:minHeight="48dp"
-        android:textSize="20sp"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="234dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/enter_0_for_fail"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sem1_6"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/headingSem1"
+        app:layout_constraintVertical_bias="0.003" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

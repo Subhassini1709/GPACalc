@@ -2,23 +2,21 @@ package com.example.gpacalc;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
-import org.w3c.dom.Text;
 
 import java.util.Locale;
 
 public class CGPA_Activity extends AppCompatActivity {
     EditText sem1,sem2,sem3,sem4,sem5,sem6,sem7,sem8;
     Button calc,reset;
-    TextView header;
     String s1,s2,s3,s4,s5,s6,s7,s8;
-    float r1=0,r2=0,r3=0,r4=0,r5=0,r6=0,r7=0,r8=0,cgpa;
-    int c1=0,c2=0,c3=0,c4=0,c5=0,c6=0,c7=0,c8=0;
+    float r1,r2,r3,r4,r5,r6,r7,r8,cgpa;
+    int c1,c2,c3,c4,c5,c6,c7,c8;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +31,6 @@ public class CGPA_Activity extends AppCompatActivity {
         sem8 = findViewById(R.id.sem8);
         calc = findViewById(R.id.calc_cgpa);
         reset = findViewById(R.id.reset_cgpa);
-        header = findViewById(R.id.cgpa_header);
 
         calc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +43,22 @@ public class CGPA_Activity extends AppCompatActivity {
                 s6 = sem6.getText().toString();
                 s7 = sem7.getText().toString();
                 s8 = sem8.getText().toString();
-                int x = 8;
+                r1=0;
+                r2=0;
+                r3=0;
+                r4=0;
+                r5=0;
+                r6=0;
+                r7=0;
+                r8=0;
+                c1=0;
+                c2=0;
+                c3=0;
+                c4=0;
+                c5=0;
+                c6=0;
+                c7=0;
+                c8=0;
                 if (!s1.equals("") && !s1.equals("0")) {
                     r1 = Float.parseFloat(s1);
                     c1=20;
@@ -81,7 +93,14 @@ public class CGPA_Activity extends AppCompatActivity {
                 }
                 int s = c1+c2+c3+c4+c5+c6+c7+c8;
                 cgpa = (float) ((r1*c1+r2*c2+r3*c3+r4*c4+r5*c5+r6*c6+r7*c7+r8*c8)/s);
-                header.setText(String.format(Locale.US,"%.2f",cgpa));
+                String result = String.format(Locale.US,"%.2f",cgpa);
+
+                Bundle bundle = new Bundle();
+                bundle.putString("name", "CGPA");
+                bundle.putString("result", result);
+                Intent intent = new Intent(getApplicationContext(), SGPA_Result_Activity.class);
+                intent.putExtras(bundle);
+                startActivity(intent);
             }
         });
 
@@ -96,7 +115,14 @@ public class CGPA_Activity extends AppCompatActivity {
                 sem6.setText("");
                 sem7.setText("");
                 sem8.setText("");
-                header.setText("");
+                s1="";
+                s2="";
+                s3="";
+                s4="";
+                s5="";
+                s6="";
+                s7="";
+                s8="";
             }
         });
 
