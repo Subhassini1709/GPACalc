@@ -1,12 +1,16 @@
 package com.example.gpacalc;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.Locale;
 
@@ -19,6 +23,8 @@ public class Sem1_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sem1);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
         m1 = findViewById(R.id.sem1_1);
         m2 = findViewById(R.id.sem1_2);
         m3 = findViewById(R.id.sem1_3);
@@ -128,15 +134,21 @@ public class Sem1_activity extends AppCompatActivity {
                         n8=0;
                 else if(s8.length()==3)
                     n8 = 10;
-
-                sgpa = (float) ((n1*4 + n2*4 + n3*3 + n4*3 + n5*3 + n6*1 + n7*1 + n8*1)/20.0);
-                String result = String.format(Locale.US,"%.2f",sgpa);
-                Bundle bundle = new Bundle();
-                bundle.putString("name", "SGPA for 1st SEM");
-                bundle.putString("result", result);
-                Intent intent = new Intent(getApplicationContext(), SGPA_Result_Activity.class);
-                intent.putExtras(bundle);
-                startActivity(intent);
+                if(n1!=0 && n2!=0 && n3!=0 && n4!=0 && n5!=0 && n6!=0 && n7!=0 & n8!=0)
+                {
+                    sgpa = (float) ((n1*4 + n2*4 + n3*3 + n4*3 + n5*3 + n6*1 + n7*1 + n8*1)/20.0);
+                    String result = String.format(Locale.US,"%.2f",sgpa);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("name", "SGPA for 1st SEM");
+                    bundle.putString("result", result);
+                    Intent intent = new Intent(getApplicationContext(), SGPA_Result_Activity.class);
+                    intent.putExtras(bundle);
+                    startActivity(intent);
+                }
+                else
+                {
+                    Toast.makeText(getApplicationContext(), "Please enter the marks for all the subjects. Enter 0 for fail", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -161,5 +173,14 @@ public class Sem1_activity extends AppCompatActivity {
                 m8.setText("");
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            this.finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

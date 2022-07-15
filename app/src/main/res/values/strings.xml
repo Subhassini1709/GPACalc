@@ -14,7 +14,7 @@
     <string name="sem_4">Sem 4</string>
     <string name="sem_2">Sem 2</string>
     <string name="cgpa_calculator">CGPA Calculator</string>
-    <string name="enter_0_for_semesters_not_completed">Enter 0 for semesters not completed</string>
+    <string name="leave_empty_for_semesters_not_completed">Leave empty for semesters not completed</string>
     <string name="reset">Reset</string>
     <string name="calculate">Calculate</string>
     <string name="percentage_to_gpa_convertor">Percentage to GPA Convertor</string>
