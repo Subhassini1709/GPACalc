@@ -20,7 +20,8 @@ public class SGPA_Result_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sgpa_result);
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        if (actionBar!=null)
+            actionBar.setDisplayHomeAsUpEnabled(true);
         header = findViewById(R.id.result_header);
         res = findViewById(R.id.result);
         txt = findViewById(R.id.msg);
@@ -44,7 +45,7 @@ public class SGPA_Result_Activity extends AppCompatActivity {
             mMediaPlayer.start();
         }
         if(sgpa>5 && sgpa<=7.5) {
-            msg = "#massRecruitment to the Rescue!";
+            msg = "#Mass \nRecruitment to the Rescue!";
             mMediaPlayer = MediaPlayer.create(this, R.raw.note3);
             mMediaPlayer.start();
         }
